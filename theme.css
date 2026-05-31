@@ -79,17 +79,7 @@
   background: var(--s2);
 }
 
-[data-theme="light"] .thread:hover {
-  background: var(--s2);
-}
+/* ── Mobile: sidebar rules don't apply ──────────────── */
 
-/* thread-title is hardcoded to Nexus's lavender #e8e4ff — override to warm cream */
-.thread-title {
-  color: var(--t1);
-}
-
-/* ── Mobile: restore sidebar to full-width drawer ───── */
-
-/* On mobile Nexus renders .mob-sidebar-inner, not .sidebar,
-   so our narrow rules don't affect the mobile drawer.
-   Nothing to do — mobile is unaffected by default. */
+/* Mobile renders inside .mob-sidebar-inner, a separate DOM branch,
+   so the narrow sidebar rules above don't affect the mobile drawer. */
