@@ -1,0 +1,95 @@
+/* ─────────────────────────────────────────────────────
+   Dusk — theme.css
+   Combines: narrow icon sidebar + card-style feed rows
+   ───────────────────────────────────────────────────── */
+
+/* ── Sidebar: collapse to icon-only ─────────────────── */
+
+.sidebar {
+  width: 64px;
+  min-width: 64px;
+}
+
+/* Logo area: center the mark, hide any text beside it */
+.sb-logo {
+  padding: 0;
+  justify-content: center;
+}
+
+.sb-logo > *:not(i):not(svg) {
+  display: none;
+}
+
+/* Nav items: center icon, remove text and count */
+.sb-item {
+  padding: 10px 0;
+  justify-content: center;
+  gap: 0;
+}
+
+.sb-item-name,
+.sb-item-count,
+.sb-label,
+.sb-divider,
+.sb-item-toggle {
+  display: none !important;
+}
+
+/* Icons: slightly larger now they're the only thing showing */
+.sb-item i {
+  width: auto;
+  font-size: 18px;
+}
+
+/* Sub-items collapse entirely — they rely on their label being visible */
+.sb-sub-item {
+  display: none !important;
+}
+
+/* User footer: center avatar, hide name/role/icon */
+.sb-user {
+  padding: 10px 0;
+  justify-content: center;
+  gap: 0;
+}
+
+.sb-user-info,
+.sb-user-icon {
+  display: none !important;
+}
+
+/* ── Feed: card-style rows ───────────────────────────── */
+
+.feed-list {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.thread {
+  border-bottom: none;
+  border: 0.5px solid var(--b2);
+  border-radius: 8px;
+  background: var(--s1);
+  margin: 0;
+}
+
+.thread:hover {
+  background: var(--s2);
+}
+
+[data-theme="light"] .thread:hover {
+  background: var(--s2);
+}
+
+/* thread-title is hardcoded to Nexus's lavender #e8e4ff — override to warm cream */
+.thread-title {
+  color: var(--t1);
+}
+
+/* ── Mobile: restore sidebar to full-width drawer ───── */
+
+/* On mobile Nexus renders .mob-sidebar-inner, not .sidebar,
+   so our narrow rules don't affect the mobile drawer.
+   Nothing to do — mobile is unaffected by default. */

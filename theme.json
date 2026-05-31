@@ -1,0 +1,25 @@
+{
+  "manifest_version": 1,
+  "name": "Dusk",
+  "slug": "dusk",
+  "version": "1.0.0",
+  "author": "your-github-handle",
+  "description": "Warm earth-toned surfaces with an amber accent. Easy on the eyes for long reading sessions.",
+  "categories": ["dark", "warm"],
+  "variables": {
+    "--bg": "#100e09",
+    "--s1": "#141008",
+    "--s2": "#1c1710",
+    "--s3": "#231d14",
+    "--t1": "#f5e6c0",
+    "--t2": "rgba(245,224,175,0.65)",
+    "--t3": "rgba(245,224,175,0.45)",
+    "--t4": "rgba(245,224,175,0.28)",
+    "--t5": "rgba(245,224,175,0.16)",
+    "--b1": "rgba(255,210,100,0.07)",
+    "--b2": "rgba(255,210,100,0.10)",
+    "--b3": "rgba(255,210,100,0.15)",
+    "--ac": "#c8903a",
+    "--av-radius": "22%"
+  }
+}
